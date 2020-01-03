@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      ul { 
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #333;
+}
+
+     li {
+    float: right;
+}
+
+     li a {
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 16px 18px;
+         text-decoration: none;
+}
+
+     li a:hover:not(.active) {
+          background-color: #111;
+}
+
+     .active {
+         background-color: #4CAF50;}
+
+     
+
+button{
+         background-color: transparent;
+         border:2px,solid,whitesmoke;
+         border-radius: 5px;
+         padding: 15px;
+         color: white;
+         font-family: sans-serif;
+         font-size: 20px;
+         letter-spacing: 3px;
+         float:right;
+         margin-right: 40px;
+         margin-left: 60px;
+
+
+}
+ body{   margin:0;
+         padding: 0;
+         background-image: url("watch dog.jpg");
+         background-size:cover;
+         background-repeat: no-repeat;
+         font-family: sans-serif;
+         overflow: hidden;
+     
+     }
+
+
+
+
+     a.a{
+         position: absolute;    
+         top:50%;
+         left:40%;
+         transform: translate(-50%,-50%);  
+         color:#fcfcfd;
+         background: transparent;
+         padding: 20px 30px;
+         font-size: 30px;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+         text-decoration: none;
+         box-shadow: 0 20px 50px rgba(0,0,0,.5);
+         overflow: hidden;
+         border-radius: 10px;
+         border-bottom:#C75B14 ;
+         border-right:#C75B14 ;
+    }
+    a.b {
+         position: absolute;
+         top:50%;
+         left:60%;
+         transform: translate(-50%,-50%);
+         color:#fcfcfd;
+         background: #C75B14;
+         padding: 20px 30px;
+         font-size: 30px;
+         letter-spacing: 3px;
+         text-decoration: none;
+         box-shadow: 0 25px 55px rgba(0,0,0,.5);
+         border-radius: 10px;
+         
+    }
+     /* a:before{
+         content: '';
+         position: absolute;
+         top: 2px;
+         left: 2px;
+         bottom: 2px;
+         width: 50%;
+         background: rgba(255,255,255,0,05);
+
+
+    } */
+    a span:nth-child(1){    
+         position: absolute;
+         top: 0;     
+         left: 0;
+         width: 100%;
+         height: 2px;
+         background: linear-gradient(to right,#DC8754,#C75B14);
+         animation: animate1 2s linear infinite;
+
+}     
+    @keyframes animate1 {
+         0%{transform: translateX(-100%);}
+         100%{transform: translateX(100%);}
+}
+
+     a span:nth-child(2)         {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 2px;
+         height: 100%;
+         background: linear-gradient(to right,#DC8754,#C75B14);
+         animation: animate2 2s linear infinite;
+         animation-delay: 1s;
+}  
+     @keyframes animate2 {
+         0%{transform: translatey(-100%);}
+         100%{transform: translatey(100%);}
+}   
+     a span:nth-child(3){
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 2px;
+         background: linear-gradient(to right,#DC8754,#C75B14);
+         animation: animate3 2s linear infinite;
+
+}   
+     @keyframes animate3 {
+         0%{transform: translateX(100%);}
+        100%{transform: translateX(-100%);}
+}
+     a span:nth-child(4){
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 2px;
+         height: 100%;
+         background: linear-gradient(to right,#DC8754,#C75B14);
+         animation: animate4 2s linear infinite;
+         animation-delay: 1s;
+} 
+     @keyframes animate4 {
+         0%{transform: translatey(100%);}
+         100%{transform: translatey(-100%);}
+}  
+
+     div.c{
+         height:180px ;
+         width: 100%;
+         background-color:black;
+         opacity: 0.5;
+         position: fixed;
+         bottom: 0;}
+
+
+     div.c a:nth-child(1){
+         position: absolute;
+         top: 0px;
+         left: 10%;
+}
+
+     div.c a:nth-child(2){
+
+         position: absolute;
+         top: 0px;
+         left: 90%;
+
+}
+
+
+     .card {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         max-width: 600px;
+         margin-top: 10%;
+         margin-left: 10%;
+         text-align: center;
+         font-family: arial;
+         background: whitesmoke;
+         display: inline-block;
+        }
+     .date {
+         color: grey;
+         font-size: 22px;
+        }
+
+     .card button {
+         margin: auto;
+         border: none;
+         outline: 0;
+         padding: 12px;
+         color: white;
+         background-color:#C75B14 ;
+         text-align: center;
+         cursor: pointer;
+         width: 100%;
+         font-size: 18px;
+        }
+
+     .card button:hover {
+         opacity: 0.7;
+        }
+
+
+
+     .img{
+         position: absolute;
+         top:30% ;
+         left: 76%;
+         width: 500px;
+         height: 400px;
+         object-fit:contain ;
+         border: #4CAF50;
+         animation: animate5 6s ease-out infinite ;
+       /*box-shadow:50px 50px 55px rgba(0,0,0,.5); */
+      /* transition: width 2s, height 2s, transform 20s; */
+
+}
+         @keyframes animate5 {
+         0%{transform: scale(1,1);}
+         25%{transform: scale(1.5,1.5) rotate(); }
+         50%{transform: scale(2,2); }
+         75%{transform: scale(1.5,1.5); }
+         100%{transform: scale(1,1); }
+     }
+  
+
+
+
+@media only screen and (max-width: 600px) {
+     body {
+           
+            
+  }
+     a.a{
+
+
+     }
+
+
+
+    }
+
+    </style>
+</head>
+
+
+
+
+
+<body><header>
+    <div>
+<ul><button>LOG IN</button>
+    <li><a href="#home">SUPPORT</a></li>
+    <li><a href="#home">FORUMS</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">STORE</a></li>
+    <li><a class="active" href="#about">MORE GAMES</a></li>
+    
+</ul>
+    </div>
+</header>
+
+
+
+<div class="card">
+    <img src="helo.jfif" alt="game" style="width:100%">
+    <h1>GAME DASH <br><hr>release date</h1>
+    <p class="date">19-9-2020</p>
+    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.
+    </p>
+    <p><button>Add to wish</button></p>
+</div>
+
+
+<div class="bg-image"></div>
+    <img class="img" src="ps4.png" alt="game concol" style="width:400px ">
+
+    <a class="a" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        WATCH TRAILER
+    </a>
+    <a class="b"  href="#">
+        
+        PRE-ORDER NOW
+    </a>
+    <footer><div class="c">
+        <a  href="#">
+        
+            <img src="left.png" alt="left"  ; >
+        </a>
+        
+        <a  href="#">
+        
+        <img src="right.png" alt="right" >
+        </a>
+    </div> </footer>
+      
+        </div>
+      
+</body>
+
+</html>
